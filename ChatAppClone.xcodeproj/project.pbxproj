@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		174A30C828119B04005AD201 /* DetailMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A30C728119B04005AD201 /* DetailMessageController.swift */; };
+		174A30CE28129F40005AD201 /* KxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A30CD28129F40005AD201 /* KxSwift.swift */; };
+		174A30D028129F5A005AD201 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A30CF28129F5A005AD201 /* ChatViewModel.swift */; };
+		174A30D228129F71005AD201 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A30D128129F71005AD201 /* MessageViewModel.swift */; };
+		174A30D62812BABD005AD201 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174A30D52812BABD005AD201 /* MessageTableViewCell.xib */; };
+		174A30D82812BACB005AD201 /* ChatListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174A30D72812BACB005AD201 /* ChatListTableViewCell.xib */; };
+		174A30DA2812BAD4005AD201 /* MessageSendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174A30D92812BAD4005AD201 /* MessageSendTableViewCell.xib */; };
+		174A30DC2812BBBB005AD201 /* MessageSendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A30DB2812BBBB005AD201 /* MessageSendTableViewCell.swift */; };
+		17CB770D2811579100B6501C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB770C2811579100B6501C /* AppDelegate.swift */; };
+		17CB770F2811579200B6501C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB770E2811579200B6501C /* SceneDelegate.swift */; };
+		17CB77112811579200B6501C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB77102811579200B6501C /* ViewController.swift */; };
+		17CB77142811579200B6501C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CB77122811579200B6501C /* Main.storyboard */; };
+		17CB77172811579200B6501C /* ChatAppClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17CB77152811579200B6501C /* ChatAppClone.xcdatamodeld */; };
+		17CB77192811579300B6501C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CB77182811579300B6501C /* Assets.xcassets */; };
+		17CB771C2811579300B6501C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17CB771A2811579300B6501C /* LaunchScreen.storyboard */; };
+		17CB77272811579400B6501C /* ChatAppCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB77262811579400B6501C /* ChatAppCloneTests.swift */; };
+		17CB77312811579400B6501C /* ChatAppCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB77302811579400B6501C /* ChatAppCloneUITests.swift */; };
+		17CB77332811579400B6501C /* ChatAppCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB77322811579400B6501C /* ChatAppCloneUITestsLaunchTests.swift */; };
+		17CB77442811583F00B6501C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB77432811583F00B6501C /* LoginController.swift */; };
+		17CB77462811588E00B6501C /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB77452811588E00B6501C /* RegisterController.swift */; };
+		17CB7748281158AF00B6501C /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB7747281158AF00B6501C /* ForgotPasswordController.swift */; };
+		17CB774A281158CB00B6501C /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB7749281158CB00B6501C /* MessageController.swift */; };
+		17CB77502811596700B6501C /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB774F2811596700B6501C /* MessageType.swift */; };
+		17CB77522811598E00B6501C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB77512811598E00B6501C /* User.swift */; };
+		17CB7754281159AA00B6501C /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB7753281159AA00B6501C /* SocketIOManager.swift */; };
+		17CB7756281159D200B6501C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB7755281159D200B6501C /* Extension.swift */; };
+		17CB775828115A1200B6501C /* Message.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17CB775728115A1200B6501C /* Message.xib */; };
+		17CB776028115A1E00B6501C /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17CB775B28115A1E00B6501C /* MessageCell.xib */; };
+		17CB776228115A1E00B6501C /* UserAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17CB775D28115A1E00B6501C /* UserAvatarCell.xib */; };
+		17CB776428115A8300B6501C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB776328115A8300B6501C /* Message.swift */; };
+		17CB776628115AE500B6501C /* UserAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB776528115AE500B6501C /* UserAvatarCell.swift */; };
+		17CB776828115B3600B6501C /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB776728115B3600B6501C /* MessageCell.swift */; };
+		17CB776A28115B7800B6501C /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17CB776928115B7800B6501C /* Login.xib */; };
+		17CB776C28115B8A00B6501C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB776B28115B8A00B6501C /* Login.swift */; };
+		17CB776E28115BCB00B6501C /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17CB776D28115BCB00B6501C /* Register.xib */; };
+		17CB777028115BDD00B6501C /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB776F28115BDD00B6501C /* Register.swift */; };
+		17CB777228115C0D00B6501C /* ForgotPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17CB777128115C0D00B6501C /* ForgotPassword.xib */; };
+		17CB777428115C1E00B6501C /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CB777328115C1E00B6501C /* ForgotPassword.swift */; };
+		17CB777728115F2A00B6501C /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 17CB777628115F2A00B6501C /* SocketIO */; };
+		17DC80A128139AEE009F998F /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC80A028139AEE009F998F /* MessageTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17CB77232811579400B6501C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17CB77012811579100B6501C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17CB77082811579100B6501C;
+			remoteInfo = ChatAppClone;
+		};
+		17CB772D2811579400B6501C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17CB77012811579100B6501C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17CB77082811579100B6501C;
+			remoteInfo = ChatAppClone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		174A30C728119B04005AD201 /* DetailMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMessageController.swift; sourceTree = "<group>"; };
+		174A30CD28129F40005AD201 /* KxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KxSwift.swift; sourceTree = "<group>"; };
+		174A30CF28129F5A005AD201 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		174A30D128129F71005AD201 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		174A30D52812BABD005AD201 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		174A30D72812BACB005AD201 /* ChatListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatListTableViewCell.xib; sourceTree = "<group>"; };
+		174A30D92812BAD4005AD201 /* MessageSendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageSendTableViewCell.xib; sourceTree = "<group>"; };
+		174A30DB2812BBBB005AD201 /* MessageSendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSendTableViewCell.swift; sourceTree = "<group>"; };
+		17CB77092811579100B6501C /* ChatAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CB770C2811579100B6501C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17CB770E2811579200B6501C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		17CB77102811579200B6501C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17CB77132811579200B6501C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17CB77162811579200B6501C /* ChatAppClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatAppClone.xcdatamodel; sourceTree = "<group>"; };
+		17CB77182811579300B6501C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17CB771B2811579300B6501C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17CB771D2811579300B6501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17CB77222811579400B6501C /* ChatAppCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CB77262811579400B6501C /* ChatAppCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppCloneTests.swift; sourceTree = "<group>"; };
+		17CB772C2811579400B6501C /* ChatAppCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17CB77302811579400B6501C /* ChatAppCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppCloneUITests.swift; sourceTree = "<group>"; };
+		17CB77322811579400B6501C /* ChatAppCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		17CB77432811583F00B6501C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		17CB77452811588E00B6501C /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		17CB7747281158AF00B6501C /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		17CB7749281158CB00B6501C /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		17CB774F2811596700B6501C /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		17CB77512811598E00B6501C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		17CB7753281159AA00B6501C /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		17CB7755281159D200B6501C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		17CB775728115A1200B6501C /* Message.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Message.xib; sourceTree = "<group>"; };
+		17CB775B28115A1E00B6501C /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		17CB775D28115A1E00B6501C /* UserAvatarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserAvatarCell.xib; sourceTree = "<group>"; };
+		17CB776328115A8300B6501C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		17CB776528115AE500B6501C /* UserAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarCell.swift; sourceTree = "<group>"; };
+		17CB776728115B3600B6501C /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		17CB776928115B7800B6501C /* Login.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		17CB776B28115B8A00B6501C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		17CB776D28115BCB00B6501C /* Register.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Register.xib; sourceTree = "<group>"; };
+		17CB776F28115BDD00B6501C /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		17CB777128115C0D00B6501C /* ForgotPassword.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPassword.xib; sourceTree = "<group>"; };
+		17CB777328115C1E00B6501C /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		17DC80A028139AEE009F998F /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17CB77062811579100B6501C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CB777728115F2A00B6501C /* SocketIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CB771F2811579400B6501C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CB77292811579400B6501C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17CB77002811579100B6501C = {
+			isa = PBXGroup;
+			children = (
+				17CB770B2811579100B6501C /* ChatAppClone */,
+				17CB77252811579400B6501C /* ChatAppCloneTests */,
+				17CB772F2811579400B6501C /* ChatAppCloneUITests */,
+				17CB770A2811579100B6501C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17CB770A2811579100B6501C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17CB77092811579100B6501C /* ChatAppClone.app */,
+				17CB77222811579400B6501C /* ChatAppCloneTests.xctest */,
+				17CB772C2811579400B6501C /* ChatAppCloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17CB770B2811579100B6501C /* ChatAppClone */ = {
+			isa = PBXGroup;
+			children = (
+				17CB7742281157BB00B6501C /* Controller */,
+				17CB7740281157A200B6501C /* View */,
+				17CB773F2811579D00B6501C /* Model */,
+				17CB770C2811579100B6501C /* AppDelegate.swift */,
+				17CB770E2811579200B6501C /* SceneDelegate.swift */,
+				17CB77102811579200B6501C /* ViewController.swift */,
+				17CB77122811579200B6501C /* Main.storyboard */,
+				17CB77182811579300B6501C /* Assets.xcassets */,
+				17CB771A2811579300B6501C /* LaunchScreen.storyboard */,
+				17CB771D2811579300B6501C /* Info.plist */,
+				17CB77152811579200B6501C /* ChatAppClone.xcdatamodeld */,
+				17CB7755281159D200B6501C /* Extension.swift */,
+			);
+			path = ChatAppClone;
+			sourceTree = "<group>";
+		};
+		17CB77252811579400B6501C /* ChatAppCloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				17CB77262811579400B6501C /* ChatAppCloneTests.swift */,
+			);
+			path = ChatAppCloneTests;
+			sourceTree = "<group>";
+		};
+		17CB772F2811579400B6501C /* ChatAppCloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17CB77302811579400B6501C /* ChatAppCloneUITests.swift */,
+				17CB77322811579400B6501C /* ChatAppCloneUITestsLaunchTests.swift */,
+			);
+			path = ChatAppCloneUITests;
+			sourceTree = "<group>";
+		};
+		17CB773F2811579D00B6501C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17CB774F2811596700B6501C /* MessageType.swift */,
+				17CB77512811598E00B6501C /* User.swift */,
+				17CB7753281159AA00B6501C /* SocketIOManager.swift */,
+				174A30CF28129F5A005AD201 /* ChatViewModel.swift */,
+				174A30D128129F71005AD201 /* MessageViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17CB7740281157A200B6501C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17CB774E2811592800B6501C /* Message */,
+				17CB774D2811590F00B6501C /* Register */,
+				17CB774C281158F900B6501C /* ResetPassword */,
+				17CB774B281158E700B6501C /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17CB7742281157BB00B6501C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17CB77432811583F00B6501C /* LoginController.swift */,
+				17CB77452811588E00B6501C /* RegisterController.swift */,
+				17CB7747281158AF00B6501C /* ForgotPasswordController.swift */,
+				17CB7749281158CB00B6501C /* MessageController.swift */,
+				174A30C728119B04005AD201 /* DetailMessageController.swift */,
+				174A30CD28129F40005AD201 /* KxSwift.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17CB774B281158E700B6501C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				17CB776928115B7800B6501C /* Login.xib */,
+				17CB776B28115B8A00B6501C /* Login.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		17CB774C281158F900B6501C /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				17CB777128115C0D00B6501C /* ForgotPassword.xib */,
+				17CB777328115C1E00B6501C /* ForgotPassword.swift */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
+		17CB774D2811590F00B6501C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				17CB776D28115BCB00B6501C /* Register.xib */,
+				17CB776F28115BDD00B6501C /* Register.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		17CB774E2811592800B6501C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				174A30D92812BAD4005AD201 /* MessageSendTableViewCell.xib */,
+				174A30D72812BACB005AD201 /* ChatListTableViewCell.xib */,
+				174A30D52812BABD005AD201 /* MessageTableViewCell.xib */,
+				17CB775728115A1200B6501C /* Message.xib */,
+				17CB775B28115A1E00B6501C /* MessageCell.xib */,
+				17CB775D28115A1E00B6501C /* UserAvatarCell.xib */,
+				17CB776328115A8300B6501C /* Message.swift */,
+				17CB776528115AE500B6501C /* UserAvatarCell.swift */,
+				17CB776728115B3600B6501C /* MessageCell.swift */,
+				174A30DB2812BBBB005AD201 /* MessageSendTableViewCell.swift */,
+				17DC80A028139AEE009F998F /* MessageTableViewCell.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17CB77082811579100B6501C /* ChatAppClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CB77362811579400B6501C /* Build configuration list for PBXNativeTarget "ChatAppClone" */;
+			buildPhases = (
+				17CB77052811579100B6501C /* Sources */,
+				17CB77062811579100B6501C /* Frameworks */,
+				17CB77072811579100B6501C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatAppClone;
+			packageProductDependencies = (
+				17CB777628115F2A00B6501C /* SocketIO */,
+			);
+			productName = ChatAppClone;
+			productReference = 17CB77092811579100B6501C /* ChatAppClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17CB77212811579400B6501C /* ChatAppCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CB77392811579400B6501C /* Build configuration list for PBXNativeTarget "ChatAppCloneTests" */;
+			buildPhases = (
+				17CB771E2811579400B6501C /* Sources */,
+				17CB771F2811579400B6501C /* Frameworks */,
+				17CB77202811579400B6501C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17CB77242811579400B6501C /* PBXTargetDependency */,
+			);
+			name = ChatAppCloneTests;
+			productName = ChatAppCloneTests;
+			productReference = 17CB77222811579400B6501C /* ChatAppCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17CB772B2811579400B6501C /* ChatAppCloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17CB773C2811579400B6501C /* Build configuration list for PBXNativeTarget "ChatAppCloneUITests" */;
+			buildPhases = (
+				17CB77282811579400B6501C /* Sources */,
+				17CB77292811579400B6501C /* Frameworks */,
+				17CB772A2811579400B6501C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17CB772E2811579400B6501C /* PBXTargetDependency */,
+			);
+			name = ChatAppCloneUITests;
+			productName = ChatAppCloneUITests;
+			productReference = 17CB772C2811579400B6501C /* ChatAppCloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17CB77012811579100B6501C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					17CB77082811579100B6501C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					17CB77212811579400B6501C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 17CB77082811579100B6501C;
+					};
+					17CB772B2811579400B6501C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 17CB77082811579100B6501C;
+					};
+				};
+			};
+			buildConfigurationList = 17CB77042811579100B6501C /* Build configuration list for PBXProject "ChatAppClone" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17CB77002811579100B6501C;
+			packageReferences = (
+				17CB777528115F2A00B6501C /* XCRemoteSwiftPackageReference "socket" */,
+			);
+			productRefGroup = 17CB770A2811579100B6501C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17CB77082811579100B6501C /* ChatAppClone */,
+				17CB77212811579400B6501C /* ChatAppCloneTests */,
+				17CB772B2811579400B6501C /* ChatAppCloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17CB77072811579100B6501C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CB776028115A1E00B6501C /* MessageCell.xib in Resources */,
+				17CB771C2811579300B6501C /* LaunchScreen.storyboard in Resources */,
+				17CB776E28115BCB00B6501C /* Register.xib in Resources */,
+				174A30DA2812BAD4005AD201 /* MessageSendTableViewCell.xib in Resources */,
+				17CB775828115A1200B6501C /* Message.xib in Resources */,
+				174A30D82812BACB005AD201 /* ChatListTableViewCell.xib in Resources */,
+				17CB77192811579300B6501C /* Assets.xcassets in Resources */,
+				17CB77142811579200B6501C /* Main.storyboard in Resources */,
+				17CB776228115A1E00B6501C /* UserAvatarCell.xib in Resources */,
+				174A30D62812BABD005AD201 /* MessageTableViewCell.xib in Resources */,
+				17CB776A28115B7800B6501C /* Login.xib in Resources */,
+				17CB777228115C0D00B6501C /* ForgotPassword.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CB77202811579400B6501C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CB772A2811579400B6501C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17CB77052811579100B6501C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174A30D228129F71005AD201 /* MessageViewModel.swift in Sources */,
+				17CB77112811579200B6501C /* ViewController.swift in Sources */,
+				174A30D028129F5A005AD201 /* ChatViewModel.swift in Sources */,
+				17CB777028115BDD00B6501C /* Register.swift in Sources */,
+				17CB776628115AE500B6501C /* UserAvatarCell.swift in Sources */,
+				17DC80A128139AEE009F998F /* MessageTableViewCell.swift in Sources */,
+				174A30C828119B04005AD201 /* DetailMessageController.swift in Sources */,
+				17CB770D2811579100B6501C /* AppDelegate.swift in Sources */,
+				17CB77462811588E00B6501C /* RegisterController.swift in Sources */,
+				17CB7756281159D200B6501C /* Extension.swift in Sources */,
+				17CB77502811596700B6501C /* MessageType.swift in Sources */,
+				174A30CE28129F40005AD201 /* KxSwift.swift in Sources */,
+				17CB774A281158CB00B6501C /* MessageController.swift in Sources */,
+				17CB7748281158AF00B6501C /* ForgotPasswordController.swift in Sources */,
+				17CB770F2811579200B6501C /* SceneDelegate.swift in Sources */,
+				174A30DC2812BBBB005AD201 /* MessageSendTableViewCell.swift in Sources */,
+				17CB77172811579200B6501C /* ChatAppClone.xcdatamodeld in Sources */,
+				17CB776428115A8300B6501C /* Message.swift in Sources */,
+				17CB776828115B3600B6501C /* MessageCell.swift in Sources */,
+				17CB77522811598E00B6501C /* User.swift in Sources */,
+				17CB77442811583F00B6501C /* LoginController.swift in Sources */,
+				17CB7754281159AA00B6501C /* SocketIOManager.swift in Sources */,
+				17CB776C28115B8A00B6501C /* Login.swift in Sources */,
+				17CB777428115C1E00B6501C /* ForgotPassword.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CB771E2811579400B6501C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CB77272811579400B6501C /* ChatAppCloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17CB77282811579400B6501C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CB77332811579400B6501C /* ChatAppCloneUITestsLaunchTests.swift in Sources */,
+				17CB77312811579400B6501C /* ChatAppCloneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17CB77242811579400B6501C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17CB77082811579100B6501C /* ChatAppClone */;
+			targetProxy = 17CB77232811579400B6501C /* PBXContainerItemProxy */;
+		};
+		17CB772E2811579400B6501C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17CB77082811579100B6501C /* ChatAppClone */;
+			targetProxy = 17CB772D2811579400B6501C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17CB77122811579200B6501C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17CB77132811579200B6501C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17CB771A2811579300B6501C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17CB771B2811579300B6501C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17CB77342811579400B6501C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17CB77352811579400B6501C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17CB77372811579400B6501C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56A4FLT79R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatAppClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Myapp.ChatAppClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17CB77382811579400B6501C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56A4FLT79R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatAppClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Myapp.ChatAppClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17CB773A2811579400B6501C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56A4FLT79R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Myapp.ChatAppCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatAppClone.app/ChatAppClone";
+			};
+			name = Debug;
+		};
+		17CB773B2811579400B6501C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56A4FLT79R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Myapp.ChatAppCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatAppClone.app/ChatAppClone";
+			};
+			name = Release;
+		};
+		17CB773D2811579400B6501C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56A4FLT79R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Myapp.ChatAppCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChatAppClone;
+			};
+			name = Debug;
+		};
+		17CB773E2811579400B6501C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56A4FLT79R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Myapp.ChatAppCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChatAppClone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17CB77042811579100B6501C /* Build configuration list for PBXProject "ChatAppClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CB77342811579400B6501C /* Debug */,
+				17CB77352811579400B6501C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CB77362811579400B6501C /* Build configuration list for PBXNativeTarget "ChatAppClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CB77372811579400B6501C /* Debug */,
+				17CB77382811579400B6501C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CB77392811579400B6501C /* Build configuration list for PBXNativeTarget "ChatAppCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CB773A2811579400B6501C /* Debug */,
+				17CB773B2811579400B6501C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17CB773C2811579400B6501C /* Build configuration list for PBXNativeTarget "ChatAppCloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17CB773D2811579400B6501C /* Debug */,
+				17CB773E2811579400B6501C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17CB777528115F2A00B6501C /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17CB777628115F2A00B6501C /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17CB777528115F2A00B6501C /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		17CB77152811579200B6501C /* ChatAppClone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17CB77162811579200B6501C /* ChatAppClone.xcdatamodel */,
+			);
+			currentVersion = 17CB77162811579200B6501C /* ChatAppClone.xcdatamodel */;
+			path = ChatAppClone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 17CB77012811579100B6501C /* Project object */;
+}
